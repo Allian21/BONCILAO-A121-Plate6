@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class BipartiteCheck {
+public class Problem5 {
     public static boolean isBipartite(List<int[]> edges, int n) {
         int[] colors = new int[n];
         Arrays.fill(colors, -1);

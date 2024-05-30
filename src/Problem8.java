@@ -1,6 +1,10 @@
-import java.util.*;
+//Problem 8
 
-public class GraphIsomorphism {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Problem8 {
     private static boolean areIsomorphic(int[][] adjMatrix1, int[][] adjMatrix2) {
         int n = adjMatrix1.length;
 

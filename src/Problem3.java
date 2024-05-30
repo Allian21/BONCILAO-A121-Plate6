@@ -2,12 +2,12 @@
 
 import java.util.Scanner;
 
-public class GraphCycleDetector {
+public class Problem3 {
     private final int vertices;
     private final boolean[][] adjacencyMatrix;
 
     // Constructor
-    public GraphCycleDetector(int vertices) {
+    public Problem3(int vertices) {
         this.vertices = vertices;
         adjacencyMatrix = new boolean[vertices][vertices];
     }
@@ -55,7 +55,7 @@ public class GraphCycleDetector {
         System.out.print("Enter the number of vertices: ");
         int vertices = scanner.nextInt();
 
-        GraphCycleDetector graph = new GraphCycleDetector(vertices);
+        Problem3 graph = new Problem3(vertices);
 
         // Read adjacency matrix
         System.out.println("Enter the adjacency matrix: ");

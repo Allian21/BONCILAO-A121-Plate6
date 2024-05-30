@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class GraphEdges {
+public class Problem2 {
 
     public static void main(String[] args) {
         Scanner inputScanner = new Scanner(System.in);

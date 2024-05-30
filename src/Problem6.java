@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class AdjacencyMatrix {
+public class Problem6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

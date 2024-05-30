@@ -5,12 +5,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Graph {
+public class Problem1 {
     private int numV; // Number of vertices
     private List<List<Integer>> adjList; // Adjacency List
 
     // Constructor
-    public Graph(int numV) {
+    public Problem1(int numV) {
         this.numV = numV;
         adjList = new ArrayList<>();
         for (int i = 0; i < numV; ++i) {
@@ -71,7 +71,7 @@ public class Graph {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of vertices in the graph: ");
         int Vertex = scanner.nextInt();
-        Graph graph = new Graph(Vertex);
+        Problem1 graph = new Problem1(Vertex);
         System.out.print("Enter the number of edges: ");
         int Edges = scanner.nextInt();
         System.out.println("Enter the edges (vertex1 vertex2): ");
