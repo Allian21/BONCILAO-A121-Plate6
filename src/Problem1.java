@@ -9,7 +9,6 @@ public class Problem1 {
     private int numV; // Number of vertices
     private List<List<Integer>> adjList; // Adjacency List
 
-    // Constructor
     public Problem1(int numV) {
         this.numV = numV;
         adjList = new ArrayList<>();
@@ -67,7 +66,7 @@ public class Problem1 {
     }
 
     // Main method
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of vertices in the graph: ");
         int Vertex = scanner.nextInt();

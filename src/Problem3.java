@@ -6,7 +6,7 @@ public class Problem3 {
     private final int vertices;
     private final boolean[][] adjacencyMatrix;
 
-    // Constructor
+
     public Problem3(int vertices) {
         this.vertices = vertices;
         adjacencyMatrix = new boolean[vertices][vertices];
