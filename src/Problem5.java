@@ -1,5 +1,3 @@
-//Problem 5
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -13,10 +11,8 @@ public class Problem5 {
         Arrays.fill(colors, -1);
 
         for (int i = 0; i < n; i++) {
-            if (colors[i] == -1) {
-                if (!bfsCheck(edges, i, colors)) {
-                    return false;
-                }
+            if (colors[i] == -1 && !bfsCheck(edges, i, colors)) {
+                return false;
             }
         }
         return true;
@@ -29,7 +25,6 @@ public class Problem5 {
 
         while (!queue.isEmpty()) {
             int node = queue.poll();
-
             for (int[] edge : edges) {
                 int u = edge[0], v = edge[1];
                 int neighbor = (u == node) ? v : (v == node) ? u : -1;
@@ -59,15 +54,9 @@ public class Problem5 {
         List<int[]> edges = new ArrayList<>();
         System.out.println("Enter the edges (pair of vertices):");
         for (int i = 0; i < m; i++) {
-            int u = scanner.nextInt();
-            int v = scanner.nextInt();
-            edges.add(new int[]{u, v});
+            edges.add(new int[]{scanner.nextInt(), scanner.nextInt()});
         }
 
-        if (isBipartite(edges, n)) {
-            System.out.println("The graph is bipartite.");
-        } else {
-            System.out.println("The graph is not bipartite.");
-        }
+        System.out.println(isBipartite(edges, n) ? "The graph is bipartite." : "The graph is not bipartite.");
     }
 }
